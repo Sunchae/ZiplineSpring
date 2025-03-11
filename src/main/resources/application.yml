@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: Aivle
+
+  profiles:
+    active: dev
+
+  servlet:
+    multipart:
+      maxFileSize: 1024MB
+      maxRequestSize: 1024MB
+
+server:
+  port: 7773
+  servlet:
+    context-path: /api/
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+
+logger:
+  stacktrace: true
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs
+
